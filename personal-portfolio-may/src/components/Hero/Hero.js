@@ -7,6 +7,20 @@ import { useSpring, animated } from '@react-spring/web'
 
 
 function Hero() {
+  const textAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+    delay: 300,
+  });
+
+  const imageAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+    delay: 600,
+  });
+
   const scrollTo = (target) => {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -20,30 +34,32 @@ function Hero() {
   const arrowAnimation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { tension: 30, friction: 20 },
+    config: { tension: 150, friction: 25, },
+    duration: 5000,
+    delay: 5,
   });
 
   return (
     <section className='hero'>
       <div className='heroContainer'>
-        <h1>CREATIVE <br></br>DEVELOPER</h1>
-        <img src={HeroImage} className='heroImage'></img>
+        <animated.h1 style={textAnimation}>CREATIVE <br></br>DEVELOPER</animated.h1>
+        <animated.img src={HeroImage} className='heroImage' style={imageAnimation}></animated.img>
         <div className='bottom'>
           <animated.div
             className={'arrow'}
             style={arrowAnimation}
             onClick={() => scrollTo('#howlingMoon')}
           >
-            <img src={Arrow} />
+            <animated.img src={Arrow} style={textAnimation}/>
           </animated.div>
-          <p>
-            I SUPPORT DESIGNERS
+          <animated.p style={textAnimation}>
+            HEAVELY INTERESTED
             <br></br>
-            AND AGENCIES WITH
+            IN UX/UI DESIGN &
             <br></br>
-            CREATIVE DEVELOPMENT
-          </p>
-          <h1>PEDRO <br></br>TASCA</h1>
+            FRONT END DEVELOPMENT
+          </animated.p>
+          <animated.h1 style={textAnimation}>PEDRO <br></br>TASCA</animated.h1>
         </div>
       </div>
     </section>

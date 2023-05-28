@@ -4,9 +4,24 @@ import './HowlingMoon.scss'
 import Arrow from '../../Arrow.png';
 import HowlingMoonImg from './Images.png';
 import { useSpring, animated } from '@react-spring/web';
+import { AiFillGithub } from "react-icons/ai";
 
 
 function HowlingMoon() {
+  const textAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+    delay: 300,
+  });
+
+  const imageAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 500 },
+    delay: 600,
+  });
+
   const scrollTo = (target) => {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -20,34 +35,41 @@ function HowlingMoon() {
   const arrowAnimation = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { tension: 2, friction: 2 },
+    config: { tension: 150, friction: 25, },
+    duration: 5000,
+    delay: 5,
   });
 
   return (
     <section className='howlingMoon' id='howlingMoon'>
       <div className='howlingMoonContainer'>
       <div className='header'>
-        <h1>HOWLING <br></br>MOON</h1>
-        <p>
+        <animated.h1 style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
+        <div className='subtitle'>
+        <animated.p style={textAnimation}>
           BOOTCAMP FINAL<br></br>PROJECT
-        </p>
+        </animated.p>
+        <animated.a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer" style={textAnimation}>
+        <AiFillGithub size={40} className='github'/>
+        </animated.a>
+        </div>
       </div>
-        <img src={HowlingMoonImg} className='howlingMoonImage'></img>
+        <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
         <div className='bottom'>
           <animated.div
             className={'arrow'}
             style={arrowAnimation}
             onClick={() => scrollTo('#howlingMoon')}
           >
-            <img src={Arrow} />
+            <animated.img style={textAnimation} src={Arrow} />
           </animated.div>
-          <p>
+          <animated.p style={textAnimation}>
             SAY GOODBYE TO
             <br></br>
             SCATTERED NOTES AND
             <br></br>
             FRAGMENTED IDEAS.
-          </p>
+          </animated.p>
           {/* <h1>PEDRO <br></br>TASCA</h1> */}
         </div>
       </div>

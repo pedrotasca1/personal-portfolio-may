@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .howlingMoonContainer {
   height: 100vh;
 
@@ -55,11 +57,28 @@ p {
   justify-content: space-between;
 }
 
-svg {
+.subtitle {
+  max-width: 30%;
   display: flex;
-
+  align-content: center;
+  justify-content: space-between;
 }
 
-.howlingMoon {
-  border: 1px solid red;
+.github {
+  display: inherit;
+  flex-direction: flex-end;
+
+  color: black;
+  opacity: 0.6;
+
+  cursor: pointer;
+  .github:hover {
+    opacity: 1;
+  }
 }
+
+
+
+// .howlingMoon {
+//   // border: 1px solid red;
+// }
