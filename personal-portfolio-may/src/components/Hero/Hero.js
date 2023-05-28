@@ -2,16 +2,17 @@
 import React from 'react';
 import './Hero.scss'
 import HeroImage from "./HeroImage.png";
-import Arrow from "../../Arrow.svg"
+import { AiOutlineArrowDown } from 'react-icons/ai';
 
 
 function Hero() {
   return (
-      <div>
-        <h1>CREATIVE DEVELOPER</h1>
+    <section className='hero'>
+      <div className='heroContainer'>
+        <h1>CREATIVE <br></br>DEVELOPER</h1>
         <img src={HeroImage}></img>
-        <div>
-          <i>{Arrow}</i>
+        <div className='bottom'>
+          <h1><AiOutlineArrowDown/></h1>
           <p>
             I SUPPORT DESIGNERS
             <br></br>
@@ -19,9 +20,10 @@ function Hero() {
             <br></br>
             CREATIVE DEVELOPMENT
           </p>
-          <h1>PEDRO TASCA</h1>
+          <h1>PEDRO <br></br>TASCA</h1>
         </div>
       </div>
+    </section>
   );
 };
 

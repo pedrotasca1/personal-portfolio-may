@@ -1,10 +1,20 @@
-.heroContainer {
-  height: 85vh;
+.howlingMoonContainer {
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  p {
+    color: rgba(0, 0, 0, 0.6);
+  }
 }
 
 div {
@@ -22,13 +32,18 @@ p {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.01em;
+  margin: 0;
+
+  padding: 32px;
+  padding-top: 0;
 }
 
-img {
+.howlingMoonImage {
   position: absolute;
-  top: 442px;
-  left: 16px;
+  top: 1000px;
+  left: 320px;
 }
+
 
 .bottom {
   display: flex;
@@ -39,4 +54,8 @@ img {
 svg {
   display: flex;
 
+}
+
+.howlingMoon {
+  border: 1px solid red;
 }
