@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+div {
+  background-color: $background-color;
+}
+
+ul {
+  max-width: 100vw;
+  height: 120px;
+
+  margin: 0;
+  padding: 0px 32px;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+  // border: 1px solid red;
+}
+
+li {
+  text-align: start;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
