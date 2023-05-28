@@ -24,6 +24,8 @@ div {
 h1 {
   font-size: 128px;
   margin: 0;
+
+  z-index: 5;
 }
 
 p {
@@ -41,9 +43,9 @@ p {
 .howlingMoonImage {
   position: absolute;
   top: 956px;
-  left: 320px;
+  right: 32px;
 
-  
+  z-index: 1;
 }
 
 
