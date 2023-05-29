@@ -41,21 +41,17 @@ function HowlingMoon() {
   });
 
   return (
-    <section className='howlingMoon' id='howlingMoon'>
+    <section className='howlingMoonSection' id='howlingMoon'>
       <div className='howlingMoonContainer'>
-      <div className='header'>
-        <animated.h1 style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
-        <div className='subtitle'>
-        <animated.p style={textAnimation}>
-          BOOTCAMP FINAL<br></br>PROJECT
-        </animated.p>
-        <animated.a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer" style={textAnimation}>
-        <AiFillGithub size={40} className='github'/>
-        </animated.a>
+        <div className='howlingMoonHeader'>
+          <animated.h1 class={'howlingMoonHeaderText'} style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
+          <animated.p class={'howlingMoonHeaderParagraph'} style={textAnimation}>
+            BOOTCAMP FINAL<br></br>PROJECT
+          </animated.p>
         </div>
-      </div>
         <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
-        <div className='bottom'>
+        <div className='howlingMoonPageBottom'>
+
           <animated.div
             className={'arrow'}
             style={arrowAnimation}
@@ -63,14 +59,24 @@ function HowlingMoon() {
           >
             <animated.img style={textAnimation} src={Arrow} />
           </animated.div>
-          <animated.p style={textAnimation}>
+
+          <div className='bottomRightContainer'>
+
+          <animated.p style={textAnimation} className={'howlingMoonBottomSentence'}>
             SAY GOODBYE TO
             <br></br>
             SCATTERED NOTES AND
             <br></br>
             FRAGMENTED IDEAS.
           </animated.p>
-          {/* <h1>PEDRO <br></br>TASCA</h1> */}
+
+            <animated.div style={textAnimation} className={'howlingMoonGithub'}>
+              <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
+                <AiFillGithub size={40} className='githubLogo'/>
+              </a>
+
+            </animated.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,15 +1,23 @@
 @import '../../App.scss';
 
+.howlingMoonSection {
+  max-width: 100vw;
+  position: relative;
+}
+
 .howlingMoonContainer {
   height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid red;
+  // background: linear-gradient(180deg, #E0DFDD 0%, #000000 800%);
+
 
 }
 
-.header {
+.howlingMoonHeader {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -19,18 +27,14 @@
   }
 }
 
-div {
-  max-width: 100vw;
-}
-
-h1 {
+.howlingMoonHeaderText{
   font-size: 128px;
   margin: 0;
 
   z-index: 5;
 }
 
-p {
+.howlingMoonHeaderParagraph {
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -38,47 +42,48 @@ p {
   letter-spacing: -0.01em;
   margin: 0;
 
-  padding: 32px;
+  padding: 32px 16px;
   padding-top: 0;
 }
 
 .howlingMoonImage {
   position: absolute;
-  top: 956px;
-  right: 32px;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
-
-.bottom {
+.howlingMoonPageBottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.subtitle {
-  max-width: 30%;
+.bottomRightContainer {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.github {
-  display: inherit;
-  flex-direction: flex-end;
+.howlingMoonGithub {
+  display: block;
+  position: relative;
+  padding: 0 32px;
+}
+
+.githubLogo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 16px;
+  bottom: 0;
+  margin: auto;
 
   color: black;
-  opacity: 0.6;
-
-  cursor: pointer;
-  .github:hover {
-    opacity: 1;
-  }
+  opacity: 0.5;
 }
 
-
-
-// .howlingMoon {
-//   // border: 1px solid red;
-// }
+.howlingMoonBottomSentence {
+  padding: 0 16px;
+}

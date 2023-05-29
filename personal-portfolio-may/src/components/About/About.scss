@@ -1,0 +1,36 @@
+.aboutSection {
+  height: 100vh;
+}
+
+.AboutContainer {
+  height: 100vh;
+
+  background:linear-gradient(180deg, #E0DFDD 0%, #000000 100%);;
+  // color: white;
+  border: 1px solid blue;
+}
+
+.aboutContent {
+  max-width: 35vw;
+  padding: 32px;
+}
+
+h4 {
+  height: 30vh;
+  // width: 30vw;
+  color: white;
+  opacity: 0.6;
+  font-size: 800px;
+
+  float: right;
+  z-index: 1;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bottomText {
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+}
