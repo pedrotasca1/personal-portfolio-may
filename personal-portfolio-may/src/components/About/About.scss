@@ -1,52 +1,67 @@
 .aboutSection {
   height: 100vh;
   position: relative;
+
+  overflow: hidden;
 }
 
 .AboutContainer {
   height: 100vh;
 
-  background:linear-gradient(180deg, #E0DFDD 0%, #000000 100%);;
+  background-color: #000000;
+  color: white;
   // color: white;
-  border: 1px solid blue;
+  // border: 1px solid blue;
 }
 
 .aboutContent {
   max-width: 35vw;
   padding: 32px;
   color: #E0DFDD;
+  margin: 0;
 
-  margin-top: 0;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
 }
 
 .aboutBackgroundImage {
   color: white;
   opacity: 0.2;
-  font-size: 800px;
+  font-size: 880px;
 
   float: right;
   z-index: 1;
 
-  margin-top: 200px;
-  margin-bottom: 0px;
+  margin-top: 80px;
+  margin-bottom: 32px;
+
+  position: absolute;
+  right: 0;
 }
 
 .bottomText {
   display: flex;
   justify-content: space-between;
   align-content: end;
+  max-height: 656px;
 }
 
 .aboutLinkContainer {
   position: absolute;
   top: 32px;
   right: 32px;
-
+  display: flex;
+  gap: 8px;
 }
 
 .aboutLinkLogo {
-  color: #000000;
+  color: white;
   opacity: 0.6;
 
   cursor: pointer;
+}
+
+.AboutContainer p {
+  padding: 0 40px;
 }

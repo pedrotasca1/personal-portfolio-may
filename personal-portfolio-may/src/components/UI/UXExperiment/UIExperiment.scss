@@ -1,11 +1,14 @@
-@import '../../App.scss';
+@import '../../../App.scss';
 
-.howlingMoonSection {
+.experimentSection {
   max-width: 100vw;
   position: relative;
+
+  background: linear-gradient(180deg, #E0DFDD 0%, #000000 100%);;
+  ;
 }
 
-.howlingMoonContainer {
+.experimentContainer {
   height: 100vh;
 
   display: flex;
@@ -15,25 +18,24 @@
   // background: linear-gradient(180deg, #E0DFDD 0%, #000000 800%);
 }
 
-.howlingMoonHeader {
+.experimentHeader {
   display: flex;
   flex-direction: row;
   gap: 0;
 
   p {
     color: rgba(0, 0, 0, 0.6);
-    // padding: 32px 0;
   }
 }
 
-.howlingMoonHeaderText{
+.experimentHeaderText{
   font-size: 128px;
   margin: 0;
 
   z-index: 5;
 }
 
-.howlingMoonHeaderParagraph {
+.experimentHeaderParagraph {
   font-size: 24px;
   line-height: 29px;
   font-style: normal;
@@ -41,10 +43,10 @@
   letter-spacing: -0.01em;
   margin: 0;
 
-  padding: 32px 32px;
+  padding: 0 32px;
 }
 
-.howlingMoonImage {
+.experimentImage {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,7 +54,7 @@
   z-index: 1;
 }
 
-.howlingMoonPageBottom {
+.experimentPageBottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -65,22 +67,24 @@
 }
 
 
-.howlingMoonBottomSentence {
+.experimentBottomSentence {
   padding: 0 16px;
+  color: white;
+  opacity: 0.6 !important;
 }
 
-.howlingMoonLinkContainer {
+.experimentLinkContainer {
   margin-top: 32px;
   margin-left: auto;
   padding: 0 32px;
 }
 
-.howlingMoonLinkLogo {
+.experimentLinkLogo {
   color: black;
   opacity: 0.6;
 }
 
-.howlingMoonHeaderTextBox  {
-
-
+.experimentArrow {
+  opacity: 0.6 !important;
+  padding: 32px;
 }
