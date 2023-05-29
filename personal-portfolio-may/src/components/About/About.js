@@ -10,6 +10,7 @@ function About() {
         <h1>
         ABOUT<br></br>ME
         </h1>
+        <p>LOOKING FOR AN<br></br>INTERNSHIP/ JUNIOR ROLE</p>
         <div className='bottomText'>
           <p className='aboutContent'>
             Aliquip adipisicing voluptate amet reprehenderit aliquip aute incididunt quis sint nostrud. Non esse excepteur ipsum et nisi nulla labore quis elit fugiat sit aliqua laborum. Irure quis aute pariatur sint cillum Lorem nulla enim minim. Mollit est laborum sint in aute veniam ad ullamco anim in elit.

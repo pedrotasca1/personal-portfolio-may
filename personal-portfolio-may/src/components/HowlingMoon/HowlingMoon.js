@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import './HowlingMoon.scss'
+import './HowlingMoon.scss';
 import Arrow from '../../Arrow.png';
 import HowlingMoonImg from './Images.png';
 import { useSpring, animated } from '@react-spring/web';
@@ -42,62 +42,57 @@ function HowlingMoon() {
   });
 
   return (
-    <section className='howlingMoonSection' id='howlingMoon'>
-      <div className='howlingMoonContainer'>
-        <div className='howlingMoonHeader'>
-          <animated.h1 class={'howlingMoonHeaderText'} style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
-                  {/* GITHUB LINK */}
+      <section className='howlingMoonSection' id='howlingMoon'>
+        <div className='howlingMoonContainer'>
 
+          <div class='howlingMoonHeader'>
+            <div className='howlingMoonHeaderTextBox'>
+              <animated.h1 class={'howlingMoonHeaderText'} style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
 
-        <div className='aboutLinkContainer'>
-          <animated.div style={textAnimation} className={'howlingMoonGithub'}>
-            <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
-              <FaGithub size={40} className='aboutLinkLogo'/>
-            </a>
-          </animated.div>
-        </div>
-
-
-        <div className='aboutLinkContainer'>
-              <a href='https://github.com/pedrotasca1' target='_blank' rel="noreferrer">
-                <FaGithub size={40} className='aboutLinkLogo'/>
-              </a>
-
-              {/* <a href='https://www.linkedin.com/in/pedro-tasca-35718297/' target='_blank' rel="noreferrer">
-                <FaLinkedin size={40} className='aboutLinkLogo'/>
-              </a> */}
+              <animated.p class={'howlingMoonHeaderParagraph'} style={textAnimation}>
+                  BOOTCAMP FINAL<br></br>PROJECT
+              </animated.p>
             </div>
 
-          <animated.p class={'howlingMoonHeaderParagraph'} style={textAnimation}>
-            BOOTCAMP FINAL<br></br>PROJECT
-          </animated.p>
-        </div>
-        <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
-
-        <div className='howlingMoonPageBottom'>
-          <animated.div
-            className={'arrow'}
-            style={arrowAnimation}
-            onClick={() => scrollTo('#howlingMoon')}
-          >
-            <animated.img style={textAnimation} src={Arrow} />
-          </animated.div>
-
-          <div className='bottomRightContainer'>
-
-          <animated.p style={textAnimation} className={'howlingMoonBottomSentence'}>
-            SAY GOODBYE TO
-            <br></br>
-            SCATTERED NOTES AND
-            <br></br>
-            FRAGMENTED IDEAS.
-          </animated.p>
+                    {/* GITHUB LINK */}
 
 
+            <div className='howlingMoonLinkContainer'>
+              <animated.div style={textAnimation} className={'howlingMoonGithub'}>
+                <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
+                  <FaGithub size={40} className='howlingMoonLinkLogo'/>
+                </a>
+              </animated.div>
+            </div>
+          </div>
+          <a href='http://www.howlingmoon.xyz/' target={'_blank'} rel='noferrer'>
+            <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
+          </a>
+
+          <div className='howlingMoonPageBottom'>
+            <animated.div
+              className={'arrow'}
+              style={arrowAnimation}
+              onClick={() => scrollTo('#howlingMoon')}
+            >
+              <animated.img style={textAnimation} src={Arrow} />
+            </animated.div>
+
+            <div className='bottomRightContainer'>
+
+            <animated.p style={textAnimation} className={'howlingMoonBottomSentence'}>
+              SAY GOODBYE TO
+              <br></br>
+              SCATTERED NOTES AND
+              <br></br>
+              FRAGMENTED IDEAS.
+            </animated.p>
+
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 
