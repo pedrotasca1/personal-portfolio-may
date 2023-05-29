@@ -14,9 +14,11 @@ div {
 }
 
 h1 {
+  letter-spacing: -0.01em;
   font-size: 128px;
   font-weight: 500;
   margin: 0;
+  // padding: 0 32px;
 }
 
 p {
@@ -43,7 +45,6 @@ p {
   justify-content: space-between;
 }
 
-svg {
-  display: flex;
-
+.name {
+  text-align: end;
 }

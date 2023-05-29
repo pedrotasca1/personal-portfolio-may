@@ -59,7 +59,7 @@ function Hero() {
             <br></br>
             FRONT END DEVELOPMENT
           </animated.p>
-          <animated.h1 style={textAnimation}>PEDRO <br></br>TASCA</animated.h1>
+          <animated.h1 style={textAnimation} className={'name'}>PEDRO<br></br>*TASCA</animated.h1>
         </div>
       </div>
     </section>
