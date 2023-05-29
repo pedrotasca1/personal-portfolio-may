@@ -18,16 +18,19 @@ function About() {
           </p>
 
           <div className='aboutLinkContainer'>
-            <a href='https://github.com/pedrotasca1' target='_blank' rel="noreferrer">
-              <FaGithub size={40} className='aboutLinkLogo'/>
-            </a>
+              <a href='https://github.com/pedrotasca1' target='_blank' rel="noreferrer">
+                <FaGithub size={40} className='aboutLinkLogo'/>
+              </a>
 
-            <a href='https://www.linkedin.com/in/pedro-tasca-35718297/' target='_blank' rel="noreferrer">
-              <FaLinkedin size={40} className='aboutLinkLogo'/>
-            </a>
-          </div>
+              <a href='https://www.linkedin.com/in/pedro-tasca-35718297/' target='_blank' rel="noreferrer">
+                <FaLinkedin size={40} className='aboutLinkLogo'/>
+              </a>
+            </div>
 
-        <h4 className='aboutBackgroundImage'>*</h4>
+
+            <h4 className='aboutBackgroundImage'>*</h4>
+
+
         </div>
       </div>
     </section>
