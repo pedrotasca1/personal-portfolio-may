@@ -4,7 +4,8 @@ import './HowlingMoon.scss'
 import Arrow from '../../Arrow.png';
 import HowlingMoonImg from './Images.png';
 import { useSpring, animated } from '@react-spring/web';
-import { AiFillGithub } from "react-icons/ai";
+// import { AiFillGithub } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 
 
 function HowlingMoon() {
@@ -45,13 +46,35 @@ function HowlingMoon() {
       <div className='howlingMoonContainer'>
         <div className='howlingMoonHeader'>
           <animated.h1 class={'howlingMoonHeaderText'} style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
+                  {/* GITHUB LINK */}
+
+
+        <div className='aboutLinkContainer'>
+          <animated.div style={textAnimation} className={'howlingMoonGithub'}>
+            <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
+              <FaGithub size={40} className='aboutLinkLogo'/>
+            </a>
+          </animated.div>
+        </div>
+
+
+        <div className='aboutLinkContainer'>
+              <a href='https://github.com/pedrotasca1' target='_blank' rel="noreferrer">
+                <FaGithub size={40} className='aboutLinkLogo'/>
+              </a>
+
+              {/* <a href='https://www.linkedin.com/in/pedro-tasca-35718297/' target='_blank' rel="noreferrer">
+                <FaLinkedin size={40} className='aboutLinkLogo'/>
+              </a> */}
+            </div>
+
           <animated.p class={'howlingMoonHeaderParagraph'} style={textAnimation}>
             BOOTCAMP FINAL<br></br>PROJECT
           </animated.p>
         </div>
         <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
-        <div className='howlingMoonPageBottom'>
 
+        <div className='howlingMoonPageBottom'>
           <animated.div
             className={'arrow'}
             style={arrowAnimation}
@@ -70,12 +93,7 @@ function HowlingMoon() {
             FRAGMENTED IDEAS.
           </animated.p>
 
-            <animated.div style={textAnimation} className={'howlingMoonGithub'}>
-              <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
-                <AiFillGithub size={40} className='githubLogo'/>
-              </a>
 
-            </animated.div>
           </div>
         </div>
       </div>
