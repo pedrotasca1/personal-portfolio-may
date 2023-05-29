@@ -1,5 +1,6 @@
 .aboutSection {
   height: 100vh;
+  position: relative;
 }
 
 .AboutContainer {
@@ -13,19 +14,20 @@
 .aboutContent {
   max-width: 35vw;
   padding: 32px;
+  color: #E0DFDD;
+
+  margin-top: 0;
 }
 
-h4 {
-  height: 30vh;
-  // width: 30vw;
+.aboutBackgroundImage {
   color: white;
-  opacity: 0.6;
+  opacity: 0.2;
   font-size: 800px;
 
   float: right;
   z-index: 1;
 
-  margin-top: 0px;
+  margin-top: 200px;
   margin-bottom: 0px;
 }
 
@@ -33,4 +35,18 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-content: end;
+}
+
+.aboutLinkContainer {
+  position: absolute;
+  top: 28%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutLinkLogo {
+  color: #000000;
+  opacity: 0.6;
+
+  cursor: pointer;
 }

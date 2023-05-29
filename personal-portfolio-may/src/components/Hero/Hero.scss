@@ -9,42 +9,18 @@
 
 }
 
-div {
-  max-width: 100vw;
-}
-
-h1 {
-  letter-spacing: -0.01em;
-  font-size: 128px;
-  font-weight: 500;
-  margin: 0;
-  // padding: 0 32px;
-}
-
-p {
-  font-size: 24px;
-  line-height: 29px;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
 .heroImage {
   position: absolute;
   top: 474px;
   left: 16px;
 }
 
-.arrow {
-  padding: 32px;
-}
-
-.bottom {
+.heroPageBottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.name {
+.heroBottomTitle {
   text-align: end;
 }

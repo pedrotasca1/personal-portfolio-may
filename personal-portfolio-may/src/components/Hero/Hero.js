@@ -44,7 +44,7 @@ function Hero() {
       <div className='heroContainer'>
         <animated.h1 style={textAnimation}>CREATIVE <br></br>DEVELOPER</animated.h1>
         <animated.img src={HeroImage} className='heroImage' style={imageAnimation}></animated.img>
-        <div className='bottom'>
+        <div className='heroPageBottom'>
           <animated.div
             className={'arrow'}
             style={arrowAnimation}
@@ -59,7 +59,7 @@ function Hero() {
             <br></br>
             FRONT END DEVELOPMENT
           </animated.p>
-          <animated.h1 style={textAnimation} className={'name'}>PEDRO<br></br>*TASCA</animated.h1>
+          <animated.h1 style={textAnimation} className={'heroBottomTitle'}>PEDRO<br></br>*TASCA</animated.h1>
         </div>
       </div>
     </section>
