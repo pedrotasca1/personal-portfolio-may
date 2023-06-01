@@ -5,6 +5,8 @@ import HowlingMoon from './components/HowlingMoon/HowlingMoon';
 import About from './components/About/About';
 import UIExperiment from './components/UI/UXExperiment/UIExperiment';
 
+// import FadeInSection from './visual-effects/FadeInSection';
+
 // import React, { useEffect, useRef } from 'react';
 
 

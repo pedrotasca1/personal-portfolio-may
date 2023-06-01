@@ -1,5 +1,8 @@
+@import '../../App.scss';
+
 #hero {
   display: flex;
+  background-color: $background-color;
 }
 
 .heroContainer {
@@ -27,3 +30,4 @@
 .heroBottomTitle {
   text-align: end;
 }
+
