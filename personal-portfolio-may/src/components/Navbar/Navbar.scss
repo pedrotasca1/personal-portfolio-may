@@ -1,20 +1,35 @@
 @import '../../App.scss';
-.navList {
-  max-width: 100vw;
-  height: 120px;
 
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navList {
+  width: 1600px;
+  height: 120px;
   margin: 0;
   padding: 0px 32px;
   list-style: none;
-
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
-
-  // border: 1px solid red;
 }
+
+.navListLinks {
+  max-width: 1600px;
+  height: 120px;
+  margin: 0;
+  padding: 0px 32px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .navListItem {
   text-align: start;

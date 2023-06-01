@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Navbar.scss";
 import { animated } from '@react-spring/web'
+import Logo from '../../Logo.png'
 
 function Navbar() {
   const scrollTo = (target) => {
@@ -16,14 +17,14 @@ function Navbar() {
   return (
       <div className='navbarContainer'>
         <ul className='navList'>
-          <li className='navListItem'>Pedro Tasca</li>
+          <li className='navListItem'><img src={ Logo }></img></li>
           <li className='navListItem'>
             Currently looking for an opportunity
             <br />
             within the industry
           </li>
           <li className='navListItem'>Based in London, England</li>
-          <ul className='navList'>
+          <ul className='navListLinks'>
             <animated.li onClick={() => scrollTo('#howlingMoon')} className={'navListItem listItem'}>Work,</animated.li>
             <animated.li onClick={() => scrollTo('#about')} className={'navListItem listItem'}>About,</animated.li>
             <animated.li className={'navListItem listItem'}>Contact</animated.li>

@@ -10,8 +10,8 @@ import FadeInSection from '../../visual-effects/FadeInSection';
 function About() {
   return (
     <section  className='aboutSection' id='about'>
-      <FadeInSection>
-        <div className='AboutContainer'>
+      <div className='AboutContainer'>
+        <FadeInSection>
           <div className='aboutContainerContent'>
             <div className='aboutHeader'>
               <h1>ABOUT<br></br>ME</h1>
@@ -34,8 +34,8 @@ function About() {
                 <h4 className='aboutBackgroundImage'>*</h4>
             </div>
           </div>
-        </div>
-      </FadeInSection>
+        </FadeInSection>
+      </div>
     </section>
   );
 }
