@@ -35,10 +35,7 @@
 
 .aboutContent {
   max-width: 35vw;
-  padding: 48px 32px;
   color: #E0DFDD;
-  margin: 0;
-  margin-left: auto;
 }
 
 .aboutHeader {
@@ -48,20 +45,12 @@
   width: 1600px;
 }
 
-// .aboutBackgroundImage {
-//   color: white;
-//   opacity: 0.2;
-//   font-size: 880px;
-//   margin-top: 80px;
-//   margin-bottom: 32px;
-//   margin-left: auto;
-// }
-
 .bottomText {
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
   max-height: 656px;
+
 }
 
 .aboutLinkContainer {

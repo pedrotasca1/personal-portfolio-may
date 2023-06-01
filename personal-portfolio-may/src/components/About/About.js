@@ -5,8 +5,6 @@ import { FaLinkedin } from 'react-icons/fa';
 
 import FadeInSection from '../../visual-effects/FadeInSection';
 
-
-
 function About() {
   return (
     <section  className='aboutSection' id='about'>
