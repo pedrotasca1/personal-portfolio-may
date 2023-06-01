@@ -3,24 +3,13 @@ import React from 'react';
 import './Hero.scss'
 import HeroImage from "./HeroImage.png";
 import Arrow from '../../Arrow.png';
-import { useSpring, animated } from '@react-spring/web'
+// import { useSpring, animated } from '@react-spring/web'
+
+import FadeInSection from '../../visual-effects/FadeInSection';
+
 
 
 function Hero() {
-  const textAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 300,
-  });
-
-  const imageAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 600,
-  });
-
   const scrollTo = (target) => {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -33,31 +22,33 @@ function Hero() {
 
   return (
     <section className='hero'>
-      <div className='heroContainer'>
-        <div className='heroHeader'>
-          <animated.h1 style={textAnimation}>CREATIVE <br></br>DEVELOPER</animated.h1>
-          <animated.img src={HeroImage} className='heroImage' style={imageAnimation}></animated.img>
-        </div>
+      <FadeInSection>
+        <div className='heroContainer'>
+          <div className='heroHeader'>
+            <h1 >CREATIVE <br></br>DEVELOPER</h1>
+            <img src={HeroImage} className='heroImage'></img>
+          </div>
 
-        <div className='heroPageBottom'>
-          <animated.div
-            className={'arrow'}
-            style={textAnimation}
-            onClick={() => scrollTo('#howlingMoon')}
-          >
-            <img src={Arrow}/>
-          </animated.div>
+          <div className='heroPageBottom'>
+            <div
+              className={'arrow'}
 
-          <animated.p style={textAnimation}>
-            HEAVELY INTERESTED
-            <br></br>
-            IN UX/UI DESIGN &
-            <br></br>
-            FRONT END DEVELOPMENT
-          </animated.p>
-          <animated.h1 style={textAnimation} className={'heroBottomTitle'}>PEDRO<br></br>*TASCA</animated.h1>
+              onClick={() => scrollTo('#howlingMoon')}
+            >
+              <img src={Arrow}/>
+            </div>
+
+            <p >
+              HEAVELY INTERESTED
+              <br></br>
+              IN UX/UI DESIGN &
+              <br></br>
+              FRONT END DEVELOPMENT
+            </p>
+            <h1  className={'heroBottomTitle'}>PEDRO<br></br>*TASCA</h1>
+          </div>
         </div>
-      </div>
+      </FadeInSection>
     </section>
   );
 };
