@@ -1,29 +1,29 @@
-.aboutSection {
-  height: 100vh;
-  position: relative;
+// .aboutSection {
+//   height: 100vh;
+//   position: relative;
 
-  overflow: hidden;
-}
+//   overflow: hidden;
+// }
 
-.AboutContainer {
-  height: 100vh;
+// .AboutContainer {
+//   height: 100vh;
 
-  background-color: #000000;
-  color: white;
-  // color: white;
-  // border: 1px solid blue;
-}
+//   background-color: #000000;
+//   color: white;
+//   // color: white;
+//   // border: 1px solid blue;
+// }
 
-.aboutContent {
-  max-width: 35vw;
-  padding: 32px;
-  color: #E0DFDD;
-  margin: 0;
+// .aboutContent {
+//   max-width: 35vw;
+//   padding: 32px;
+//   color: #E0DFDD;
+//   margin: 0;
 
-  position: absolute;
-  right: 0;
-  bottom: 40px;
-}
+//   position: absolute;
+//   right: 0;
+//   // bottom: 40px;
+// }
 
 .aboutBackgroundImage {
   color: white;
@@ -40,28 +40,102 @@
   right: 0;
 }
 
+// .bottomText {
+//   display: flex;
+//   justify-content: space-between;
+//   align-content: end;
+//   max-height: 656px;
+// }
+
+// .aboutLinkContainer {
+//   position: absolute;
+//   top: 32px;
+//   right: 32px;
+//   display: flex;
+//   gap: 8px;
+// }
+
+// .aboutLinkLogo {
+//   color: white;
+//   opacity: 0.6;
+
+//   cursor: pointer;
+// }
+
+// .AboutContainer p {
+//   padding: 0 40px;
+//   margin: 0;
+// }
+
+// //////////////////////////////////////
+.aboutSection {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: #000000;
+  color: white;
+}
+
+.AboutContainer {
+  height: 100vh;
+  width: 1600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.aboutContent {
+  max-width: 35vw;
+  padding: 32px;
+  color: #E0DFDD;
+  margin: 0;
+  margin-left: auto;
+}
+
+.aboutHeader {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1600px;
+}
+
+// .aboutBackgroundImage {
+//   color: white;
+//   opacity: 0.2;
+//   font-size: 880px;
+//   margin-top: 80px;
+//   margin-bottom: 32px;
+//   margin-left: auto;
+// }
+
 .bottomText {
   display: flex;
   justify-content: space-between;
-  align-content: end;
+  align-content: flex-end;
   max-height: 656px;
 }
 
 .aboutLinkContainer {
-  position: absolute;
-  top: 32px;
-  right: 32px;
   display: flex;
   gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 32px;
+  margin-right: 32px;
 }
 
 .aboutLinkLogo {
   color: white;
   opacity: 0.6;
-
   cursor: pointer;
 }
 
 .AboutContainer p {
   padding: 0 40px;
+  margin: 0;
 }

@@ -7,6 +7,9 @@
 
 .howlingMoonContainer {
   height: 100vh;
+  max-width: 1600px;
+
+  margin: auto;
 
   display: flex;
   flex-direction: column;
@@ -19,6 +22,8 @@
   display: flex;
   flex-direction: row;
   gap: 0;
+
+  z-index: 5;
 
   p {
     color: rgba(0, 0, 0, 0.6);
@@ -41,7 +46,7 @@
   letter-spacing: -0.01em;
   margin: 0;
 
-  padding: 32px 32px;
+  padding: 0 32px;
 }
 
 .howlingMoonImage {
@@ -80,7 +85,7 @@
   opacity: 0.6;
 }
 
-.howlingMoonHeaderTextBox  {
-
-
+.arrow {
+  cursor: pointer;
+  z-index: 5;
 }
