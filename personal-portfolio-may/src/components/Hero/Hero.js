@@ -16,6 +16,7 @@ function Hero() {
       window.scrollTo({
         top: targetElement.offsetTop,
         behavior: 'smooth',
+        timingFunction: 'cubic-bezier(0.4, 0.8, 0.2, 1)',
       });
     }
   };

@@ -14,7 +14,7 @@ const FadeInSection = ({ children }) => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     observer.observe(sectionRef.current);
@@ -28,4 +28,3 @@ const FadeInSection = ({ children }) => {
 };
 
 export default FadeInSection;
-
