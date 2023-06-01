@@ -25,9 +25,7 @@ function About() {
           <div className='bottomText'>
             <div></div>
             <p className='aboutContent'>
-              Aliquip adipisicing voluptate amet reprehenderit aliquip aute incididunt quis sint nostrud. Non esse excepteur ipsum et nisi nulla labore quis elit fugiat sit aliqua laborum. Irure quis aute pariatur sint cillum Lorem nulla enim minim. Mollit est laborum sint in aute veniam ad ullamco anim in elit.
-              Aliquip adipisicing voluptate amet reprehenderit aliquip aute incididunt quis sint nostrud. Non esse excepteur ipsum et nisi nulla labore quis elit fugiat sit aliqua laborum. Irure quis aute pariatur sint cillum Lorem nulla enim minim. Mollit est laborum sint in aute veniam ad ullamco anim in elit.
-              Aliquip adipisicing voluptate amet reprehenderit aliquip aute incididunt quis sint nostrud. Non esse excepteur ipsum et nisi nulla labore quis elit fugiat sit aliqua laborum. Irure quis aute pariatur sint cillum Lorem nulla enim minim. Mollit est laborum sint in aute veniam ad ullamco anim in elit.
+            An aspiring frontend web developer and UI designer with a strong passion for creating visually captivating and user-friendly websites. Recently, I successfully completed a comprehensive web development bootcamp, where I gained a solid foundation in HTML, CSS, JavaScript, and the principles of UI/UX design. With a keen eye for detail and a dedication to creating seamless user experiences, I am now eagerly seeking a junior role in the industry to further develop my skills, contribute to exciting projects, and continue my journey towards becoming a skilled professional in the world of web development.
             </p>
               <h4 className='aboutBackgroundImage'>*</h4>
           </div>
