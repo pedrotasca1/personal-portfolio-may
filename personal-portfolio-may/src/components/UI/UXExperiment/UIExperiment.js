@@ -1,29 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './UIExperiment.scss';
-import WhiteArrow from './WhiteArrow.png';
 import UIExperimentImg from './Frame 2.png';
-import { useSpring, animated } from '@react-spring/web';
-// import { AiFillGithub } from "react-icons/ai";
-// import { FaGithub } from "react-icons/fa";
+// import { useSpring, animated } from '@react-spring/web';
 import { FaFigma } from "react-icons/fa";
+import ShadowArrow from './ShadowArrow.png'
 
 
 function UIExperiment() {
-  const textAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 300,
-  });
-
-  const imageAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 600,
-  });
-
   const scrollTo = (target) => {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -34,21 +18,13 @@ function UIExperiment() {
     }
   };
 
-  const arrowAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { tension: 150, friction: 25, },
-    duration: 5000,
-    delay: 5,
-  });
-
   return (
-    <section className='experimentSection' id='howlingMoon'>
+    <section className='experimentSection' id='UIExperiment'>
       <div className='experimentContainer'>
 
 
         <div className='experimentHeader'>
-          <div style={textAnimation}>
+          <div>
             <h1 class={'experimentHeaderText'}>UI STUDY <br></br>CASE</h1>
 
             <p class={'experimentHeaderParagraph'}>
@@ -58,36 +34,35 @@ function UIExperiment() {
 
 
           <div className='experimentLinkContainer'>
-            <animated.div style={textAnimation} className={'experimentGithub'}>
+            <div className={'experimentGithub'}>
               <a href='https://www.figma.com/file/bi3UOdVCkuoHmUv5incjpJ/GREVE-E-SHOP?type=design&node-id=85%3A546&t=cWMmrNw5Xv01xYMD-1' target='_blank' rel="noreferrer">
                 <FaFigma size={40} className='experimentLinkLogo'/>
               </a>
-            </animated.div>
+            </div>
           </div>
         </div>
 
-        <a href='https://www.figma.com/file/bi3UOdVCkuoHmUv5incjpJ/GREVE-E-SHOP?type=design&node-id=85%3A546&t=cWMmrNw5Xv01xYMD-1' target='_blank' rel='noreferrer'>
-        <animated.img src={UIExperimentImg} className='experimentImage' style={imageAnimation}></animated.img>
+        <a href='https://www.figma.com/proto/bi3UOdVCkuoHmUv5incjpJ/GREVE-E-SHOP?node-id=1-2&scaling=scale-down' target='_blank' rel='noreferrer'>
+        <img src={UIExperimentImg} className='experimentImage'></img>
         </a>
 
         <div className='experimentPageBottom'>
-          <animated.div
+          <div
             className={'experimentArrow'}
-            style={arrowAnimation}
-            onClick={() => scrollTo('#experiment')}
+            onClick={() => scrollTo('#about')}
           >
-            <animated.img style={textAnimation} src={WhiteArrow} />
-          </animated.div>
+            <img src={ShadowArrow} />
+          </div>
 
           <div className='bottomRightContainer'>
 
-          <animated.p style={textAnimation} className={'experimentBottomSentence'}>
+          <p className={'experimentBottomSentence'}>
             SAY GOODBYE TO
             <br></br>
             SCATTERED NOTES AND
             <br></br>
             FRAGMENTED IDEAS.
-          </animated.p>
+          </p>
 
 
           </div>

@@ -3,26 +3,9 @@ import React from 'react';
 import './HowlingMoon.scss';
 import Arrow from '../../Arrow.png';
 import HowlingMoonImg from './Images.png';
-import { useSpring, animated } from '@react-spring/web';
-// import { AiFillGithub } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 
-
 function HowlingMoon() {
-  const textAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 300,
-  });
-
-  const imageAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 500 },
-    delay: 600,
-  });
-
   const scrollTo = (target) => {
     const targetElement = document.querySelector(target);
     if (targetElement) {
@@ -33,60 +16,52 @@ function HowlingMoon() {
     }
   };
 
-  const arrowAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { tension: 150, friction: 25, },
-    duration: 5000,
-    delay: 5,
-  });
-
   return (
       <section className='howlingMoonSection' id='howlingMoon'>
         <div className='howlingMoonContainer'>
 
           <div class='howlingMoonHeader'>
             <div className='howlingMoonHeaderTextBox'>
-              <animated.h1 class={'howlingMoonHeaderText'} style={textAnimation}>HOWLING <br></br>MOON</animated.h1>
+              <h1 class={'howlingMoonHeaderText'}>HOWLING <br></br>MOON</h1>
 
-              <animated.p class={'howlingMoonHeaderParagraph'} style={textAnimation}>
+              <p class={'howlingMoonHeaderParagraph'}>
                   BOOTCAMP FINAL<br></br>PROJECT
-              </animated.p>
+              </p>
             </div>
 
                     {/* GITHUB LINK */}
-
-
             <div className='howlingMoonLinkContainer'>
-              <animated.div style={textAnimation} className={'howlingMoonGithub'}>
+              <div className={'howlingMoonGithub'}>
                 <a href='https://github.com/LucasNseyep/howling-moon' target='_blank' rel="noreferrer">
                   <FaGithub size={40} className='howlingMoonLinkLogo'/>
                 </a>
-              </animated.div>
+              </div>
             </div>
           </div>
-          <a href='http://www.howlingmoon.xyz/' target={'_blank'} rel='noferrer'>
-            <animated.img src={HowlingMoonImg} className='howlingMoonImage' style={imageAnimation}></animated.img>
+
+
+          <a href='http://www.howlingmoon.xyz/' target={'_blank'} rel='noreferrer'>
+            <img src={HowlingMoonImg} className='howlingMoonImage'></img>
           </a>
 
           <div className='howlingMoonPageBottom'>
-            <animated.div
+
+            <div
               className={'arrow'}
-              style={arrowAnimation}
-              onClick={() => scrollTo('#howlingMoon')}
+              onClick={() => scrollTo('#UIExperiment')}
             >
-              <animated.img style={textAnimation} src={Arrow} />
-            </animated.div>
+              <img src={Arrow} />
+            </div>
 
             <div className='bottomRightContainer'>
 
-            <animated.p style={textAnimation} className={'howlingMoonBottomSentence'}>
+            <p className={'howlingMoonBottomSentence'}>
               SAY GOODBYE TO
               <br></br>
               SCATTERED NOTES AND
               <br></br>
               FRAGMENTED IDEAS.
-            </animated.p>
+            </p>
 
 
             </div>

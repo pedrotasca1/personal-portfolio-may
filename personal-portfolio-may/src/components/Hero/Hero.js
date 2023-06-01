@@ -31,27 +31,23 @@ function Hero() {
     }
   };
 
-  const arrowAnimation = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { tension: 150, friction: 25, },
-    duration: 5000,
-    delay: 5,
-  });
-
   return (
     <section className='hero'>
       <div className='heroContainer'>
-        <animated.h1 style={textAnimation}>CREATIVE <br></br>DEVELOPER</animated.h1>
-        <animated.img src={HeroImage} className='heroImage' style={imageAnimation}></animated.img>
+        <div className='heroHeader'>
+          <animated.h1 style={textAnimation}>CREATIVE <br></br>DEVELOPER</animated.h1>
+          <animated.img src={HeroImage} className='heroImage' style={imageAnimation}></animated.img>
+        </div>
+
         <div className='heroPageBottom'>
           <animated.div
             className={'arrow'}
-            style={arrowAnimation}
+            style={textAnimation}
             onClick={() => scrollTo('#howlingMoon')}
           >
-            <animated.img src={Arrow} style={textAnimation}/>
+            <img src={Arrow}/>
           </animated.div>
+
           <animated.p style={textAnimation}>
             HEAVELY INTERESTED
             <br></br>
