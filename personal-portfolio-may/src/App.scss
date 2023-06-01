@@ -51,10 +51,10 @@ p {
 .fade-in-section {
   opacity: 0;
   transform: translateX(40px);
-  transition: opacity 0.4s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .fade-in-section.visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0px);
 }
