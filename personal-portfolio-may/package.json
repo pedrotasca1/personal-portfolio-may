@@ -2,6 +2,7 @@
   "name": "personal-portfolio-may",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pedrotasca1.github.io/personal-portfolio-may",
   "dependencies": {
     "@react-spring/web": "^9.7.2",
     "@testing-library/jest-dom": "^5.16.5",
