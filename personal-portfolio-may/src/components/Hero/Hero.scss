@@ -3,6 +3,8 @@
 #hero {
   display: flex;
   background-color: $background-color;
+
+  padding: 32px;
 }
 
 .heroContainer {
@@ -10,6 +12,8 @@
   margin-top: 3.2vh;
 
   max-width: 1600px;
+  min-height: 860px;
+
   margin: auto;
 }
 
@@ -31,3 +35,6 @@
   text-align: end;
 }
 
+.h1Spam {
+  color: $secondary-color;
+}

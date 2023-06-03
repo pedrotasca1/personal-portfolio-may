@@ -1,5 +1,7 @@
+@import '../../App.scss';
+
 .aboutBackgroundImage {
-  color: white;
+  color: $background-color;
   opacity: 0.2;
   font-size: 880px;
 
@@ -18,8 +20,8 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  background-color: #000000;
-  color: white;
+  background-color: $primary-color;
+  color: $background-color;
 }
 
 .AboutContainer {
@@ -35,7 +37,9 @@
 
 .aboutContent {
   max-width: 35vw;
-  color: #E0DFDD;
+  // color: #E0DFDD;
+
+  margin-top: 40px;
 }
 
 .aboutHeader {
@@ -63,12 +67,22 @@
 }
 
 .aboutLinkLogo {
-  color: white;
+  color: $detail-color;
   opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
   cursor: pointer;
+
+}
+
+.aboutLinkLogo:hover {
+  opacity: 1;
 }
 
 .AboutContainer p {
   padding: 0 40px;
   margin: 0;
+}
+
+.typoDark {
+  color: $background-color;
 }

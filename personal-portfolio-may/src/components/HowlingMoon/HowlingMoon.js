@@ -5,6 +5,7 @@ import Arrow from '../../Arrow.png';
 import HowlingMoonImg from './Images.png';
 import { FaGithub } from "react-icons/fa";
 
+import { useSpring, animated } from 'react-spring';
 import FadeInSection from '../../visual-effects/FadeInSection';
 
 
@@ -18,6 +19,14 @@ function HowlingMoon() {
       });
     }
   };
+
+  const springProps = useSpring({
+    to: { scrollTop: 0 },
+    config: { mass: 1, tension: 280, friction: 60 },
+    onFrame: (props) => {
+      window.scrollTo(0, props.scrollTop);
+    },
+  });
 
   return (
       <section className='howlingMoonSection' id='howlingMoon'>
@@ -50,12 +59,13 @@ function HowlingMoon() {
 
             <div className='howlingMoonPageBottom'>
 
-              <div
+              <animated.div
                 className={'arrow'}
+                style={springProps}
                 onClick={() => scrollTo('#UIExperiment')}
               >
                 <img src={Arrow} />
-              </div>
+              </animated.div>
 
               <div className='bottomRightContainer'>
 

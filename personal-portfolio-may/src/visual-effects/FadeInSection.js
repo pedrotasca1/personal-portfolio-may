@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef } from 'react';
 
 const FadeInSection = ({ children }) => {
@@ -14,7 +15,7 @@ const FadeInSection = ({ children }) => {
           }
         });
       },
-      { threshold: 0.7 }
+      { threshold: 0.3 }
     );
 
     observer.observe(sectionRef.current);
