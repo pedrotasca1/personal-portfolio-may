@@ -2,7 +2,7 @@
 import React from 'react';
 import './UIExperiment.scss';
 import UIExperimentImg from './Frame 2.png';
-// import { useSpring, animated } from '@react-spring/web';
+import { useSpring, animated } from '@react-spring/web';
 import { FaFigma } from "react-icons/fa";
 import ShadowArrow from './ShadowArrow.png'
 
@@ -20,6 +20,14 @@ function UIExperiment() {
       });
     }
   };
+
+  const springProps = useSpring({
+    to: { scrollTop: 0 },
+    config: { mass: 1, tension: 280, friction: 60 },
+    onFrame: (props) => {
+      window.scrollTo(0, props.scrollTop);
+    },
+  });
 
   return (
     <section className='experimentSection' id='UIExperiment'>
@@ -51,12 +59,13 @@ function UIExperiment() {
           </a>
 
           <div className='experimentPageBottom'>
-            <div
+            <animated.div
               className={'experimentArrow'}
+              style={springProps}
               onClick={() => scrollTo('#about')}
             >
               <img src={ShadowArrow} />
-            </div>
+            </animated.div>
 
             <div className='bottomRightContainer'>
 

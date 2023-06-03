@@ -3,11 +3,9 @@ import React from 'react';
 import './Hero.scss'
 import HeroImage from "./HeroImage.png";
 import Arrow from '../../Arrow.png';
-// import { useSpring, animated } from '@react-spring/web'
 
 import FadeInSection from '../../visual-effects/FadeInSection';
-
-
+import { useSpring, animated } from 'react-spring';
 
 function Hero() {
   const scrollTo = (target) => {
@@ -16,28 +14,35 @@ function Hero() {
       window.scrollTo({
         top: targetElement.offsetTop,
         behavior: 'smooth',
-        timingFunction: 'cubic-bezier(0.4, 0.8, 0.2, 1)',
       });
     }
   };
+
+  const springProps = useSpring({
+    to: { scrollTop: 0 },
+    config: { mass: 1, tension: 280, friction: 60 },
+    onFrame: (props) => {
+      window.scrollTo(0, props.scrollTop);
+    },
+  });
 
   return (
     <section className='hero'>
       <FadeInSection>
         <div className='heroContainer'>
           <div className='heroHeader'>
-            <h1 >CREATIVE <br></br>DEVELOPER</h1>
+            <h1><span className="h1Spam">&#60;</span>CREATIVE <br></br>DEVELOPER<span className="h1Spam">&#62;</span></h1>
             <img src={HeroImage} className='heroImage'></img>
           </div>
 
           <div className='heroPageBottom'>
-            <div
+            <animated.div
               className={'arrow'}
-
+              style={springProps}
               onClick={() => scrollTo('#howlingMoon')}
             >
               <img src={Arrow}/>
-            </div>
+            </animated.div>
 
             <p >
               HEAVELY INTERESTED
@@ -46,7 +51,7 @@ function Hero() {
               <br></br>
               FRONT END DEVELOPMENT
             </p>
-            <h1  className={'heroBottomTitle'}>PEDRO<br></br>*TASCA</h1>
+            <h1  className={'heroBottomTitle'}>PEDRO<br></br><span className='h1Spam'>*</span>TASCA</h1>
           </div>
         </div>
       </FadeInSection>
