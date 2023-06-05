@@ -25,7 +25,7 @@ function Navbar() {
   return (
       <div className='navbarContainer'>
         <ul className='navList'>
-          <li className='navListItem'><img src={ Logo } alt='logo'></img></li>
+          <li className='navListItem'><img src={ Logo } alt="logo" /></li>
           <li className='navListItem'>
             Currently looking for an opportunity
             <br />
