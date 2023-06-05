@@ -5,6 +5,8 @@ const FadeInSection = ({ children }) => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const currentRef = sectionRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -18,10 +20,10 @@ const FadeInSection = ({ children }) => {
       { threshold: 0.3 }
     );
 
-    observer.observe(sectionRef.current);
+    observer.observe(currentRef);
 
     return () => {
-      observer.unobserve(sectionRef.current);
+      observer.unobserve(currentRef);
     };
   }, []);
 
@@ -29,3 +31,4 @@ const FadeInSection = ({ children }) => {
 };
 
 export default FadeInSection;
+
